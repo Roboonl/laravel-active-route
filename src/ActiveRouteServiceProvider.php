@@ -2,14 +2,12 @@
 
 namespace Rukhsar\ActiveRoute;
 
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ActiveRouteServiceProvider extends BaseServiceProvider
 {
-
     // Indicates if the loading of provider deferred
-
     protected $defer = false;
 
     const PACKAGE_NAME = 'activeroute';
@@ -39,7 +37,7 @@ class ActiveRouteServiceProvider extends BaseServiceProvider
         $this->mergeConfig();
 
         // Register Singletion
-        $this->app->singleton('active', function($app) {
+        $this->app->singleton('active', function ($app) {
             return new Active(optional($app['router']->current())->getName());
         });
     }
@@ -52,7 +50,7 @@ class ActiveRouteServiceProvider extends BaseServiceProvider
     protected function publishConfig()
     {
         $this->publishes([
-            $this->packagePath('config/config.php') =>  config_path(self::PACKAGE_NAME.'.php')
+            $this->packagePath('config/config.php') => config_path(self::PACKAGE_NAME . '.php')
         ], 'config');
     }
 
@@ -62,7 +60,7 @@ class ActiveRouteServiceProvider extends BaseServiceProvider
 
         Blade::directive('ifActiveRoute', function ($expression) {
 
-                return "<?php if (Active::route({$expression})): ?>";
+            return "<?php if (Active::route({$expression})): ?>";
         });
     }
 

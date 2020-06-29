@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Facade;
  *
  * @package Rukhsar\ActiveRoute
  */
-
 class Active extends Facade
 {
     protected static function getFacadeAccessor()

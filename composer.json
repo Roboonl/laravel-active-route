@@ -2,9 +2,9 @@
     "name": "rukhsar/laravel-active-route",
     "description": "A laravel helper package.",
     "license": "MIT",
-    "authors": [{"name": "Rukhsar Manzoor", "email": "rukhsar.man@gmail.com"}],
+    "authors": [{"name": "Rukhsar Manzoor", "email": "rukhsar.man@gmail.com"}, {"name":  "Robin Losse", "email":  "robin@roboo.nl"}],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=7.3"
     },
       "autoload": {
       "psr-4": {
