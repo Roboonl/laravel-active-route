@@ -1,17 +1,27 @@
 {
-    "name": "rukhsar/laravel-active-route",
-    "description": "A laravel helper package.",
-    "license": "MIT",
-    "authors": [{"name": "Rukhsar Manzoor", "email": "rukhsar.man@gmail.com"}, {"name":  "Robin Losse", "email":  "robin@roboo.nl"}],
-    "require": {
-        "php": ">=7.3"
+  "name": "rukhsar/laravel-active-route",
+  "description": "A laravel helper package.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rukhsar Manzoor",
+      "email": "rukhsar.man@gmail.com"
     },
-      "autoload": {
-      "psr-4": {
-          "Rukhsar\\ActiveRoute\\": "src"
-        },
-      "files": [
-        "src/helpers.php"
-      ]
+    {
+      "name": "Robin Losse",
+      "email": "robin@roboo.nl"
     }
-  }
+  ],
+  "require": {
+    "php": ">=7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rukhsar\\ActiveRoute\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
